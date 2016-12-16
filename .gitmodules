@@ -1,0 +1,9 @@
+[submodule "compose"]
+	path = compose
+	url = ./compose
+[submodule "docker-liquibase"]
+	path = docker-liquibase
+	url = ./docker-liquibase
+[submodule "postgres"]
+	path = postgres
+	url = ./postgres
