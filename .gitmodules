@@ -7,3 +7,6 @@
 [submodule "postgres"]
 	path = postgres
 	url = ./postgres
+[submodule "ruby-arm64/ruby"]
+	path = ruby-arm64/ruby
+	url = git@github.com:jelazos7/ruby.git
