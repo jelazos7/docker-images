@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+
+  redmine:
+    image: redmine
+    ports:
+      - 8120:3000
+    depends_on:
+      - postgres
+    restart: always
+    volumes:
+        - redmine-files:/usr/src/redmine/files
+
+  postgres:
+    image: postgres 
+    environment:
+      POSTGRES_USER: redmine
+      POSTGRES_PASSWORD: secret
+    restart: always
+    volumes:
+        - redmine-db:/var/lib/postgresql/data
+volumes:
+    redmine-db:
+        external:
+            name: redmine-db
+    redmine-files:
+        external:
+            name: redmine-files

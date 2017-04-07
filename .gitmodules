@@ -10,3 +10,6 @@
 [submodule "ruby-arm64/ruby"]
 	path = ruby-arm64/ruby
 	url = git@github.com:jelazos7/ruby.git
+[submodule "redmine/redmine"]
+	path = redmine/redmine
+	url = git@github.com:docker-library/redmine.git
